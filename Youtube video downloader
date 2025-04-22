@@ -1,0 +1,7 @@
+from pytube import YouTube
+url = input("enter url")
+yt = YouTube(link)
+print(yt.Title)
+stream = yt.stream.get.highest_resolution()
+print("Downloading...")
+stream.Download
