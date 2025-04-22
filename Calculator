@@ -1,0 +1,27 @@
+def cal():
+
+    num1 = int(input("Enter a Number: "))
+    op = input("Enter a operator: ")
+    num2 = int(input("Enter a number: "))
+
+    if op == "+":
+        result = num1 + num2
+    elif op == "-":
+        result = num1 - num2
+    elif op == "*":
+        result = num1 * num2
+    elif op == "/":
+        res = num1 / num2
+        
+        result = res * 100 
+    elif op == "/":
+        if num2 <= 0:
+            print("This is invalid number")
+        else:
+            result = num1 / num2
+    else:
+        print("Invalid Operator")
+    
+    print(f"{num1} {op} {num2}")
+    print("Result is : " , result)
+cal()
